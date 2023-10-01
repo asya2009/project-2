@@ -1,0 +1,8393 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Eugen Beirit" />
+    <meta name="description" content="Angelinas Vokabeltrainer" />
+    <title>Vokabeltrainer | 23.07.2023</title>
+    <link
+      rel="shortcut icon"
+      href="https://images.freeimages.com/fic/images/icons/98/nx11/256/internet_real.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./lexiling.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="button.css" />
+  </head>
+  <body onload="sortWords()">
+    <!--translate="no"-->
+    <header class="kopfzeile">
+      <!-- <h3>Vokabeltrainer</h3> -->
+      <!-- <img src="german-flag-15.gif.webp" alt="Flagge" /> -->
+      
+        <a href="../index.html"><button class="home">Startseite</button></a>
+      
+
+      <!-- Uhrzeit, Datum und Woche -->
+      <div class="urzeit-datum-woche">
+        <p id="time"></p>
+        <p id="date"></p>
+        <p id="week"></p>
+      </div>
+    </header>
+
+    <section>
+      <!-- Überschrift -->
+      <h1 id="ueberschrift" class="color-change">update vom 23.07.2023</h1>
+
+      <div id="letter-box">
+        <div class="letter">
+          <a href="#letterA">
+            <button class="pushable vibrate-button">
+              <span class="front">A</span>
+            </button>
+          </a>
+
+          <a href="#letterB">
+            <button class="pushable vibrate-button">
+              <span class="front">B</span>
+            </button>
+          </a>
+
+          <a href="#letterC">
+            <button class="pushable vibrate-button">
+              <span class="front">C</span>
+            </button>
+          </a>
+
+          <a href="#letterD">
+            <button class="pushable vibrate-button">
+              <span class="front">D</span>
+            </button>
+          </a>
+
+          <a href="#letterE">
+            <button class="pushable vibrate-button">
+              <span class="front">E</span>
+            </button>
+          </a>
+
+          <a href="#letterF">
+            <button class="pushable vibrate-button">
+              <span class="front">F</span>
+            </button>
+          </a>
+
+          <a href="#letterG">
+            <button class="pushable vibrate-button">
+              <span class="front">G</span>
+            </button>
+          </a>
+
+          <a href="#letterH">
+            <button class="pushable vibrate-button">
+              <span class="front">H</span>
+            </button>
+          </a>
+
+          <a href="#letterI">
+            <button class="pushable vibrate-button">
+              <span class="front">I</span>
+            </button>
+          </a>
+
+          <a href="#letterJ">
+            <button class="pushable vibrate-button">
+              <span class="front">J</span>
+            </button>
+          </a>
+
+          <a href="#letterK">
+            <button class="pushable vibrate-button">
+              <span class="front">K</span>
+            </button>
+          </a>
+
+          <a href="#letterL">
+            <button class="pushable vibrate-button">
+              <span class="front">L</span>
+            </button>
+          </a>
+
+          <a href="#letterM">
+            <button class="pushable vibrate-button">
+              <span class="front">M</span>
+            </button>
+          </a>
+
+          <a href="#letterN">
+            <button class="pushable vibrate-button">
+              <span class="front">N</span>
+            </button>
+          </a>
+
+          <a href="#letterO">
+            <button class="pushable vibrate-button">
+              <span class="front">O</span>
+            </button>
+          </a>
+
+          <a href="#letterP">
+            <button class="pushable vibrate-button">
+              <span class="front">P</span>
+            </button>
+          </a>
+
+          <a href="#letterQ">
+            <button class="pushable vibrate-button">
+              <span class="front">Q</span>
+            </button>
+          </a>
+
+          <a href="#letterR">
+            <button class="pushable vibrate-button">
+              <span class="front">R</span>
+            </button>
+          </a>
+
+          <a href="#letterS">
+            <button class="pushable vibrate-button">
+              <span class="front">S</span>
+            </button>
+          </a>
+
+          <a href="#letterT">
+            <button class="pushable vibrate-button">
+              <span class="front">T</span>
+            </button>
+          </a>
+
+          <a href="#letterU">
+            <button class="pushable vibrate-button">
+              <span class="front">U</span>
+            </button>
+          </a>
+
+          <a href="#letterV">
+            <button class="pushable vibrate-button">
+              <span class="front">V</span>
+            </button>
+          </a>
+
+          <a href="#letterW">
+            <button class="pushable vibrate-button">
+              <span class="front">W</span>
+            </button>
+          </a>
+
+          <a href="#letterX">
+            <button class="pushable vibrate-button">
+              <span class="front">X</span>
+            </button>
+          </a>
+
+          <a href="#letterY">
+            <button class="pushable vibrate-button">
+              <span class="front">Y</span>
+            </button>
+          </a>
+
+          <a href="#letterZ">
+            <button class="pushable vibrate-button">
+              <span class="front">Z</span>
+            </button>
+          </a>
+
+          <a href="#letterÄ">
+            <button class="pushable vibrate-button">
+              <span class="front">Ä</span>
+            </button>
+          </a>
+
+          <a href="#letterÖ">
+            <button class="pushable vibrate-button">
+              <span class="front">Ö</span>
+            </button>
+          </a>
+
+          <a href="#letterÜ">
+            <button class="pushable vibrate-button">
+              <span class="front">Ü</span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- 27.01.2023 START -------->
+      <ol id="myList">
+        <h2>Liste</h2>
+        <li id="letterM">
+          Mädchen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Katze
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Buch
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Lehrerin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Junge
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Fenster
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Hand
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Pulover
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Karotte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schrank
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Blume
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tisch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Melone
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wassermelone
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Apfel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Birne
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Sofa
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Bett
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Mütze
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Familie
+          <span class="red">die</span>
+        </li>
+        <!-- 27.01.2023 END ---------->
+
+        <!-- 28.01.2023 START -------->
+        <li>
+          Hund
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Heft
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Bleistift
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Flasche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Lineal
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Mäpchen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Lippe
+          <span class="red">die</span>
+        </li>
+
+        <li id="letterT">
+          T-Shirt
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Nase
+          <span class="red">die</span>
+        </li>
+
+        <li id="letterH">
+          Haar
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Waschmaschine
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schokolade
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Buntstift
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Limette
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schule
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Zitrone
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Zebra
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Tanne
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tee
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Computer
+          <span class="green">der</span>
+        </li>
+        <!-- 28.01.2023 END ---------->
+
+        <!-- 29.01.2023 START -------->
+        <li>
+          Saft
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Handy
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Krokodil
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Orange
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Banane
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wasser
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Bier
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Shampoo
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Deutschland
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Landkarte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Straße
+          <span class="red">die</span>
+        </li>
+
+        <li id="letterJ">
+          Jacke
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Haus
+          <span class="blue">das</span>
+        </li>
+
+        <li id="letterZ">
+          Zahn
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ukraine
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kartoffel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Pizza
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Mund
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Uhr
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Salat
+          <span class="green">der</span>
+        </li>
+        <!-- 29.01.2023 END ---------->
+
+        <!-- 30.01.2023 END ---------->
+        <li>
+          Frau
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kind
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Brot
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Jogurt
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kopf
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Tomate
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Sportklasse
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Sporthalle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Rucksack
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ranzen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Zug
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mutter
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Mango
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ei
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Scheere
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Spritze
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Regen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Sonne
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Papagei
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Dusche
+          <span class="red">die</span>
+        </li>
+        <!-- 30.01.2023 END ---------->
+
+        <!-- 01.02.2023 START -------->
+        <li>
+          Wanne
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tasche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Toilette
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Gott
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Giraffe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Puppe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Salz
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Zucker
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Stuhl
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Montag
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Dienstag
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Samstag
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Sonntag
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Auto
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Massage
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Optiker
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Elektriker
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          lötten
+          <span class=""></span>
+        </li>
+
+        <li>
+          schwarz
+          <span class=""></span>
+        </li>
+
+        <li>
+          grüßen
+          <span class=""></span>
+        </li>
+        <!-- 01.02.2023 END ---------->
+
+        <!-- 02.02.2023 START -------->
+        <li>
+          Mappe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Linse
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Rutsche
+          <span class="red">die</span>
+        </li>
+
+        <li id="letterC">
+          Capucchino
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Rock
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Post
+          <span class="red">die</span>
+        </li>
+
+        <li id="letterD">
+          Dach
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Tablet
+          <span class="blue">das</span>
+          (in einer Küche)
+        </li>
+
+        <li>
+          Tablet-PC
+          <span class="green">der</span>
+          (in einem Büro)
+        </li>
+
+        <li>
+          Küche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Döner
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Avocado
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kiwi
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Hose
+          <span class="red">die</span>
+        </li>
+
+        <li id="letterO">
+          Ohr
+          <span class="blue">das</span>
+        </li>
+
+        <li id="letterF">
+          Fahrrad
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Hausaufgabe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Box
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Fußball
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Basketball
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ball
+          <span class="green">der</span>
+        </li>
+        <!-- 02.02.2023 END ---------->
+
+        <!-- 03.02.2023 START -------->
+        <li>
+          Schatz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ehescheidung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Hochzeit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Prophet
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Absatz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Zentimeter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Killometer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Dezimeter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Millimeter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Meter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          unwichtig
+          <span class=""></span>
+        </li>
+
+        <li>
+          feiern
+          <span class=""></span>
+        </li>
+
+        <li>
+          niedlich
+          <span class=""></span>
+        </li>
+
+        <li>
+          finden
+          <span class=""></span>
+        </li>
+
+        <li>
+          erfahren
+          <span class=""></span>
+        </li>
+
+        <li>
+          kontrolieren
+          <span class=""></span>
+        </li>
+
+        <li>
+          wichtig
+          <span class=""></span>
+        </li>
+
+        <li>
+          nett
+          <span class=""></span>
+        </li>
+
+        <li>
+          kennenlernen
+          <span class=""></span>
+        </li>
+
+        <li>
+          frieren
+          <span class=""></span>
+        </li>
+        <!-- 03.02.2023 END ---------->
+
+        <!-- 04.02.2023 START -------->
+        <li>
+          Stadion
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kollege
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Bild
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Vitamin
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kapsel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Fehler
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Methode
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Süssigkeit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Pantoffel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Erfolg
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Nummer
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Konzert
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Gedicht
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Zahnarzt
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          gebeten
+          <span class=""></span>
+        </li>
+
+        <li>
+          geschafft
+          <span class=""></span>
+        </li>
+
+        <li>
+          freundlich
+          <span class=""></span>
+        </li>
+
+        <li>
+          neu
+          <span class=""></span>
+        </li>
+
+        <li>
+          allein
+          <span class=""></span>
+        </li>
+
+        <li>
+          dann
+          <span class=""></span>
+        </li>
+        <!-- 04.02.2023 END ---------->
+
+        <!-- 05.02.2023 START -------->
+        <li>
+          Themperatur
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Asthma
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Tischler
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Seemann
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Achteck
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Büro
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Hefter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Chiropraktiker
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Seifenschale
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kunstschule
+          <span class="red">die</span>
+        </li>
+
+        <li id="letterL">
+          Lakritz
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kragen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Papiertüte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Sieger
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Loch
+          <span class="blue">die</span>
+        </li>
+
+        <li>
+          Sportschule
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Medaille
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          gekrümmt
+          <span class=""></span>
+        </li>
+
+        <li>
+          gerade
+          <span class=""></span>
+        </li>
+
+        <li>
+          intelektuell
+          <span class=""></span>
+        </li>
+        <!-- 05.02.2023 END ---------->
+
+        <!-- 06.02.2023 START -------->
+        <li>
+          Windel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Fan
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Sonnenuhr
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Sonnenschirm
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Popkonzert
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Rockkonzert
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Sportcenter
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Tal
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Grad
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Aerobic
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Material
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Klippe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Höhle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          minimal
+          <span class=""></span>
+        </li>
+
+        <li>
+          darauf
+          <span class=""></span>
+        </li>
+
+        <li>
+          verlassen
+          <span class=""></span>
+        </li>
+
+        <li>
+          darum
+          <span class=""></span>
+        </li>
+
+        <li>
+          prima
+          <span class=""></span>
+        </li>
+
+        <li>
+          gegen
+          <span class=""></span>
+        </li>
+
+        <li>
+          aufschreiben
+          <span class=""></span>
+        </li>
+        <!-- 06.02.2023 END ---------->
+
+        <!-- 07.02.2023 START -------->
+        <li>
+          Geschäftsmann
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Konferenz
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wunderwaffe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kinderarzt
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Rechteck
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Busch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Suche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Artikel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          suchen
+          <span class=""></span>
+        </li>
+
+        <li id="letterA">
+          abbrechen
+          <span class=""></span>
+        </li>
+
+        <li>
+          gesund
+          <span class=""></span>
+        </li>
+
+        <li>
+          formieren
+          <span class=""></span>
+        </li>
+
+        <li>
+          kostenlos
+          <span class=""></span>
+        </li>
+
+        <li>
+          langsam
+          <span class=""></span>
+        </li>
+
+        <li>
+          zulassen
+          <span class=""></span>
+        </li>
+
+        <li>
+          verschwinden
+          <span class=""></span>
+        </li>
+
+        <li>
+          herunterladen
+          <span class=""></span>
+        </li>
+
+        <li>
+          erlauben
+          <span class=""></span>
+        </li>
+        <!-- 07.02.2023 END ---------->
+
+        <!-- 08.02.2023 START -------->
+        <li>
+          Bushaltestelle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          U-Boot
+          <span class="blue">das</span>
+        </li>
+
+        <li id="letterI">
+          Idee
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schulhof
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Morgen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mittag
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Souße
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Inhalt
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Abend
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Magie
+          <span class="green">die</span>
+        </li>
+
+        <li>
+          Nacht
+          <span class="green">die</span>
+        </li>
+
+        <li>
+          magisch
+          <span class=""></span>
+        </li>
+
+        <li>
+          komfortabel
+          <span class=""></span>
+        </li>
+
+        <li>
+          zurück
+          <span class=""></span>
+        </li>
+
+        <li>
+          weiter
+          <span class=""></span>
+        </li>
+
+        <li>
+          raus
+          <span class=""></span>
+        </li>
+
+        <li>
+          möglich
+          <span class=""></span>
+        </li>
+
+        <li>
+          rund
+          <span class=""></span>
+        </li>
+        <!-- 08.02.2023 END ---------->
+
+        <!-- 12.02.2023 START -------->
+        <li>
+          Biene
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Hai
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Auge
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Licht
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Physik
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Biologieraum
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Stadt
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Geburtstag
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Onkel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pipette
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          grün
+          <span class=""></span>
+        </li>
+
+        <li>
+          trocken
+          <span class=""></span>
+        </li>
+
+        <li>
+          hellgrün
+          <span class=""></span>
+        </li>
+
+        <li>
+          alt
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelviolett
+          <span class=""></span>
+        </li>
+
+        <li>
+          lang
+          <span class=""></span>
+        </li>
+
+        <li>
+          multiplizieren
+          <span class=""></span>
+        </li>
+
+        <li>
+          dividieren
+          <span class=""></span>
+        </li>
+
+        <li>
+          buchstabieren
+          <span class=""></span>
+        </li>
+
+        <li>
+          maximal
+          <span class=""></span>
+        </li>
+        <!-- 12.02.2023 END ---------->
+
+        <!-- 14.02.2023 START -------->
+        <li>
+          Sekretariat
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Schülerin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bacon
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kamm
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Treppe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schnecke
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Boxen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Maus
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Freitag
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kirsche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wolke
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          positiv
+          <span class=""></span>
+        </li>
+
+        <li>
+          sprechen
+          <span class=""></span>
+        </li>
+
+        <li>
+          arbeiten
+          <span class=""></span>
+        </li>
+
+        <li>
+          orange
+          <span class=""></span>
+        </li>
+
+        <li>
+          rot
+          <span class=""></span>
+        </li>
+
+        <li>
+          malen
+          <span class=""></span>
+        </li>
+
+        <li>
+          haben
+          <span class=""></span>
+        </li>
+
+        <li>
+          möchten
+          <span class=""></span>
+        </li>
+
+        <li>
+          wollen
+          <span class=""></span>
+        </li>
+        <!-- 14.02.2023 END ---------->
+
+        <!-- 15.02.2023 START -------->
+        <li>
+          Perle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Traktor
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          gelb
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelbraun
+          <span class=""></span>
+        </li>
+
+        <li>
+          hellgrau
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelgrau
+          <span class=""></span>
+        </li>
+
+        <li>
+          violett
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelweiß
+          <span class=""></span>
+        </li>
+
+        <li>
+          weiß
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelrot
+          <span class=""></span>
+        </li>
+
+        <li>
+          hellrot
+          <span class=""></span>
+        </li>
+
+        <li>
+          fragen
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelrosa
+          <span class=""></span>
+        </li>
+
+        <li>
+          hellrosa
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelschwarz
+          <span class=""></span>
+        </li>
+
+        <li>
+          bronzefarbig
+          <span class=""></span>
+        </li>
+
+        <li>
+          kommen
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkel
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelgelb
+          <span class=""></span>
+        </li>
+
+        <li>
+          hellorange
+          <span class=""></span>
+        </li>
+        <!-- 15.02.2023 END -------->
+
+        <!-- 17.02.2023 START ------>
+        <li>
+          Krankenbett
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Pinzette
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tablette
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tante
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Stativ
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Lama
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Farbe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Zwiebel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Igel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Adjektiv
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Erde
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Woche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          männlich
+          <span class=""></span>
+        </li>
+
+        <li>
+          weiblich
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelorange
+          <span class=""></span>
+        </li>
+
+        <li>
+          hellgelb
+          <span class=""></span>
+        </li>
+
+        <li>
+          schwer
+          <span class=""></span>
+        </li>
+
+        <li>
+          in
+          <span class=""></span>
+        </li>
+
+        <li>
+          können
+          <span class=""></span>
+        </li>
+
+        <li>
+          verstehen
+          <span class=""></span>
+        </li>
+        <!-- 17.02.2023 END ---------->
+
+        <!-- 18.02.2023 START--------->
+        <li>
+          Eichhörnchen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Arm
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Wippe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Traube
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ballade
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bibel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schneeball
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schnee
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          hellbraun
+          <span class=""></span>
+        </li>
+
+        <li>
+          helllila
+          <span class=""></span>
+        </li>
+
+        <li>
+          hellviolett
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelgrün
+          <span class=""></span>
+        </li>
+
+        <li>
+          hellblau
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkellila
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelblau
+          <span class=""></span>
+        </li>
+
+        <li>
+          dunkelbronze
+          <span class=""></span>
+        </li>
+
+        <li>
+          erklären
+          <span class=""></span>
+        </li>
+
+        <li>
+          Kniebeuge
+          <span class="red">die</span>
+        </li>
+        <!-- 18.02.2023 END ---------->
+
+        <!-- 19.02.2023 START -------->
+        <li>
+          Finger
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Eiweiß
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Pflanze
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Lebewesen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Tier
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Austasch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kraftwerk
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Tierzelle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          euch
+          <span class=""></span>
+        </li>
+
+        <li>
+          ausgefüllt
+          <span class=""></span>
+        </li>
+
+        <li>
+          umgehen
+          <span class=""></span>
+        </li>
+
+        <li>
+          letzte
+          <span class=""></span>
+        </li>
+
+        <li>
+          anders
+          <span class=""></span>
+        </li>
+
+        <li>
+          zusammen
+          <span class=""></span>
+        </li>
+
+        <li>
+          enthält
+          <span class=""></span>
+        </li>
+
+        <li>
+          aufgebaut
+          <span class=""></span>
+        </li>
+
+        <li>
+          notwendig
+          <span class=""></span>
+        </li>
+
+        <li>
+          vor (allem)
+          <span class=""></span>
+        </li>
+
+        <!-- 19.02.2023 END ---------->
+
+        <!-- 20.02.2023 START -------->
+        <li>
+          Grafit
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Stoffwechsel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kunst­stoff
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Funktion
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Stoff
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Achtung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Gleis
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Pirat
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Raum
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Bonbon
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Flame
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Fuß
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Umfrage
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Königin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          König
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Affe
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Flagge
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          umfahren
+          <span class=""></span>
+        </li>
+
+        <li>
+          brauchen
+          <span class=""></span>
+        </li>
+
+        <li>
+          gehören
+          <span class=""></span>
+        </li>
+        <!-- 20.02.2023 END ---------->
+
+        <!-- 22.02.2023 START -------->
+        <li>
+          Darstellung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Hahn
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kater
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Zellplasma
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Objekttisch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Obektivrevolver
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Wildschwein
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Zellsaft
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gegensatz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Turnier
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Faser
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Zellmembran
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          lernen
+          <span class=""></span>
+        </li>
+
+        <li>
+          gesagt
+          <span class=""></span>
+        </li>
+
+        <li>
+          besteht
+          <span class=""></span>
+        </li>
+
+        <li>
+          mich
+          <span class=""></span>
+        </li>
+
+        <li>
+          muß
+          <span class=""></span>
+        </li>
+
+        <li>
+          träumen
+          <span class=""></span>
+        </li>
+
+        <li>
+          dich
+
+          <span class=""></span>
+        </li>
+
+        <!-- 22.02.2023 END ---------->
+
+        <!-- 23.02.2023 START -------->
+        <li>
+          Spiegel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Vogel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Bein
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Industrie
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wurst
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Radio
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Pflaume
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wein
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Vokal
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Wechsel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Esel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          müde
+          <span class=""></span>
+        </li>
+
+        <li>
+          sehen
+          <span class=""></span>
+        </li>
+
+        <li>
+          hier
+          <span class=""></span>
+        </li>
+
+        <li>
+          geschlossen
+          <span class=""></span>
+        </li>
+
+        <li>
+          heute
+          <span class=""></span>
+        </li>
+
+        <li>
+          jetzt
+          <span class=""></span>
+        </li>
+
+        <li>
+          unser
+          <span class=""></span>
+        </li>
+
+        <li>
+          zu
+          <span class=""></span>
+        </li>
+
+        <li>
+          schlecht
+          <span class=""></span>
+        </li>
+
+        <li>
+          über
+          <span class=""></span>
+        </li>
+
+        <li>
+          uns
+          <span class=""></span>
+        </li>
+
+        <li>
+          abtrocknen
+          <span class=""></span>
+        </li>
+
+        <li>
+          hinter
+          <span class=""></span>
+        </li>
+
+        <li>
+          oben
+          <span class=""></span>
+        </li>
+        <!-- 23.02.2023 END ---------->
+
+        <!-- 24.02.2023 START -------->
+        <li>
+          Bank
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Freund
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Bibliothek
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          See
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bach
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Strom
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pinsel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mathematik
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          warten
+          <span class=""></span>
+        </li>
+
+        <li>
+          warm
+          <span class=""></span>
+        </li>
+
+        <li>
+          kalt
+          <span class=""></span>
+        </li>
+
+        <li>
+          rosa
+          <span class=""></span>
+        </li>
+
+        <li>
+          spazieren
+          <span class=""></span>
+        </li>
+
+        <li>
+          singen
+          <span class=""></span>
+        </li>
+
+        <li>
+          gehen
+          <span class=""></span>
+        </li>
+
+        <li>
+          waschen
+          <span class=""></span>
+        </li>
+
+        <li>
+          zuhören
+          <span class=""></span>
+        </li>
+
+        <li>
+          sitzen
+          <span class=""></span>
+        </li>
+
+        <li>
+          tanzen
+          <span class=""></span>
+        </li>
+        <!-- 24.02.2023 END ---------->
+
+        <!-- 26.02.2023 START -------->
+        <li>
+          Wurm
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Huhn
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Hamster
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Grass
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Pferd
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schmetterling
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ratte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Mehl
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Locke
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Monat
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Jahr
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Glass
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Irrenhaus
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Limonade
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          warum
+          <span class=""></span>
+        </li>
+
+        <li>
+          richtig
+          <span class=""></span>
+        </li>
+
+        <li>
+          falsch
+          <span class=""></span>
+        </li>
+
+        <li>
+          stimmt
+          <span class=""></span>
+        </li>
+
+        <li>
+          schneiden
+          <span class=""></span>
+        </li>
+
+        <li>
+          markieren
+          <span class=""></span>
+        </li>
+        <!-- 26.02.2023 END ---------->
+
+        <!-- 27.02.2023 START -------->
+        <li>
+          Substanz
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Struktur
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          September
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          November
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Juni
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schutz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Stabilität
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wand
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Juli
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Winter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Demension
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          ledeglich
+          <span class=""></span>
+        </li>
+
+        <li>
+          anschauen
+          <span class=""></span>
+        </li>
+
+        <li>
+          telefonieren
+          <span class=""></span>
+        </li>
+
+        <li>
+          stützt
+          <span class=""></span>
+        </li>
+
+        <li>
+          fest
+          <span class=""></span>
+        </li>
+
+        <li>
+          interessant
+          <span class=""></span>
+        </li>
+
+        <li>
+          umrundet
+          <span class=""></span>
+        </li>
+
+        <li>
+          schlafen
+          <span class=""></span>
+        </li>
+        <!-- 27.02.2023 END ---------->
+
+        <!-- 28.02.2023 START -------->
+        <li>
+          Holz
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Gummi
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Metall
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Entschuldigung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Leid
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kabel
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Gans
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Moment
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kuh
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Papier
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Karton
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Silbe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Inventar
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Cousine
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Puzzle
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Antwort
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Person
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          bitte
+          <span class=""></span>
+        </li>
+
+        <li>
+          danke
+          <span class=""></span>
+        </li>
+
+        <li>
+          glatt
+          <span class=""></span>
+        </li>
+        <!-- 28.02.2023 END ---------->
+
+        <!-- 01.03.2023 START -------->
+        <li>
+          Luft
+          <span class="red">die</span>
+        </li>
+
+        <li id="letterR">
+          Rad
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Gips
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Aluminium
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kritik
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Dorf
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kreuz
+          <span class="blue">das</span>
+        </li>
+
+        <li id="letterB">
+          Bäckerei
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bus
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Knie
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Berg
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Elter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Sohn
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Tanz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          normal
+          <span class=""></span>
+        </li>
+
+        <li>
+          besser
+          <span class=""></span>
+        </li>
+
+        <li>
+          tot
+          <span class=""></span>
+        </li>
+
+        <li>
+          reich
+          <span class=""></span>
+        </li>
+
+        <li>
+          perfekt
+          <span class=""></span>
+        </li>
+
+        <li>
+          laut
+          <span class=""></span>
+        </li>
+        <!-- 01.03.2023 END ---------->
+
+        <!-- 02.03.2023 START -------->
+        <li>
+          Nielpferd
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Seite
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schaaf
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Sandale
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Sonnenbrille
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Handschuh
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ente
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Handtuch
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Haargel
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Gas
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kurve
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kien
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Seehund
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Regal
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          ergänzen
+          <span class=""></span>
+        </li>
+
+        <li>
+          drücken
+          <span class=""></span>
+        </li>
+
+        <li>
+          kurz
+          <span class=""></span>
+        </li>
+
+        <li>
+          tasten
+          <span class=""></span>
+        </li>
+
+        <li>
+          nass
+          <span class=""></span>
+        </li>
+
+        <li>
+          riechen
+          <span class=""></span>
+        </li>
+        <!-- 02.03.2023 END ---------->
+
+        <!-- 03.03.2023 START -------->
+        <li>
+          Haferbrei
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Körper
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mörder
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schottenrock
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kurs
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schluss
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ende
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Fön
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Start
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Nagelschere
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Körpergel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Parfüm
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Drama
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Requisit
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Mayonnaise
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Oma
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Opa
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Jahrhundert
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Stern
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          jawohl
+          <span class=""></span>
+        </li>
+        <!-- 03.03.2023 END ---------->
+
+        <!-- 04.03.2023 START -------->
+        <li>
+          kaufen
+          <span class=""></span>
+        </li>
+
+        <li>
+          essen
+          <span class=""></span>
+        </li>
+
+        <li>
+          schreiben
+          <span class=""></span>
+        </li>
+
+        <li>
+          machen
+          <span class=""></span>
+        </li>
+
+        <li>
+          schade
+          <span class=""></span>
+        </li>
+
+        <li>
+          arm
+          <span class=""></span>
+        </li>
+
+        <li>
+          mögen
+          <span class=""></span>
+        </li>
+
+        <li>
+          dass
+          <span class=""></span>
+        </li>
+
+        <li>
+          töten
+          <span class=""></span>
+        </li>
+
+        <li>
+          tragen
+          <span class=""></span>
+        </li>
+
+        <li>
+          ihr
+          <span class=""></span>
+        </li>
+
+        <li>
+          niemand
+          <span class=""></span>
+        </li>
+
+        <li>
+          schottisch
+          <span class=""></span>
+        </li>
+        <!-- 04.03.2023 END ---------->
+
+        <!-- 05.03.2023 START -------->
+        <li>
+          Geruch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Stimme
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Osten
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Westen
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Rafting
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kamping
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Insekt
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Wagen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ton
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pfirsich
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Zeit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tunnel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kreis
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Dunkelheit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Medizin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          putzen
+          <span class=""></span>
+        </li>
+
+        <li>
+          jeder
+          <span class=""></span>
+        </li>
+
+        <li>
+          jemand
+          <span class=""></span>
+        </li>
+
+        <li>
+          atmen
+          <span class=""></span>
+        </li>
+
+        <li>
+          konnte
+          <span class=""></span>
+        </li>
+        <!-- 05.03.2023 END ---------->
+
+        <!-- 06.03.2023 START -------->
+        <li>
+          Karikatur
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Arzt
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Verband
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Information
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kleidung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          April
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Löwe
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schritt
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kampf
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ärztin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Irland
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Link
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          fahren
+          <span class=""></span>
+        </li>
+
+        <li>
+          durch
+          <span class=""></span>
+        </li>
+
+        <li>
+          einschlafen
+          <span class=""></span>
+        </li>
+
+        <li>
+          vergessen
+          <span class=""></span>
+        </li>
+
+        <li>
+          zwischen
+          <span class=""></span>
+        </li>
+
+        <li>
+          aufladen
+          <span class=""></span>
+        </li>
+        <!-- 06.03.2023 END ---------->
+
+        <!-- 11.03.2023 START -------->
+        <li>
+          Bewertung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kunde
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Dreirad
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Antene
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Signal
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Butter
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tierärztin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Münze
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Taktik
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Silber
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Paket
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Tasse
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wiedersehen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Baum
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Clown
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Assistent
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          golden (am goldesten)
+          <span class=""></span>
+        </li>
+
+        <li>
+          sagen
+          <span class=""></span>
+        </li>
+        <!-- 11.03.2023 END ---------->
+
+        <!-- 12.03.2023 START -------->
+        <li>
+          Katholik
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Soldatin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Rieser
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Erdboden
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pfeffer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kaffeeweißer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kohl
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schmand
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gurke
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Rübe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tipp
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Rat
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Brühe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Brokkoli
+          <span class="green">der</span>
+        </li>
+        <!-- bis hier ist update 12:33 -->
+        <li>
+          Netz
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Käse
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          kosten (Preis)
+          <span class=""></span>
+        </li>
+
+        <li>
+          kosten (Leckerei)
+          <span class=""></span>
+        </li>
+
+        <li>
+          einsam
+          <span class=""></span>
+        </li>
+
+        <li>
+          wo
+          <span class=""></span>
+        </li>
+        <!-- 12.03.2023 END ---------->
+
+        <!-- 13.03.2023 START -------->
+        <li>
+          Überraschung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Gene
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Nichte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Initiative
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Messer
+          <span class="red">das</span>
+        </li>
+
+        <li>
+          Chip (Snack)
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Reh
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Formular
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Stück
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Schlafzimmer
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Chili
+          <span class="green">der</span>
+        </li>
+        <!-- bis hier ist update 19:24 -->
+        <li>
+          Paprika
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          du
+          <span class=""></span>
+        </li>
+
+        <li>
+          welcher
+          <span class=""></span>
+        </li>
+
+        <li>
+          dumm
+          <span class=""></span>
+        </li>
+
+        <li>
+          bunt
+          <span class=""></span>
+        </li>
+
+        <li>
+          lecker
+          <span class=""></span>
+        </li>
+
+        <li>
+          abschreiben
+          <span class=""></span>
+        </li>
+
+        <li>
+          gelernt
+          <span class=""></span>
+        </li>
+
+        <li>
+          aber
+          <span class=""></span>
+        </li>
+        <!-- 13.03.2023 END ---------->
+
+        <!-- 14.03.2023 END ---------->
+        <li>
+          Bauch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Brust
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Seife
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Fernbedienung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Großelter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kissen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Sessel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Wimper
+          <span class="red">die</span>
+        </li>
+        <li>
+          Harke
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Lippenstift
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Wall
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gabel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Chamäleon
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Schildkrött
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Toilettenbürste
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Couch
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Oberlid
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Waschbecken
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Terarrium
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          schreihen
+          <span class=""></span>
+        </li>
+        <!-- 14.03.2023 END ---------->
+
+        <!-- 15.03.2023 START -------->
+        <li>
+          Terrasse
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wolf
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Vogelkäfig
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Antilope
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Gecko
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Honig
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Sonnencreme
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Toilettenpapier
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kopfhörer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Grill
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Krabbe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Haargummi
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ventilator
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Känguru
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Nagellack
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Nudel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Pommes
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Emotion
+          <span class="red">die</span>
+        </li>
+        <!-- 15.03.2023 END -------->
+
+        <!-- 16.03.2023 START ------>
+        <li>
+          Creme
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wetter
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Polizeiwache
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kürbis
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Skorpion
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Krankenwagen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Marienkäfer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Deodorant
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Mundwasser
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Mais
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schachtel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Rombus
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Puma
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Modell
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Wasserhahn
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Löffel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Teelöffel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Bongo
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          ehrlich
+          <span class=""></span>
+        </li>
+        <!-- 16.03.2023 END -------->
+
+        <!-- 17.03.2023 START ------>
+        <li>
+          Ampel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Flug
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Harfe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ski
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kammel
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Tastatur
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Beruf
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pizaschneider
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mikrowelle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Arbeiter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Polizist
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kalender
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schuhregal
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Roggenbrot
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Weisbrot
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Weizen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Reibe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Strauß
+          <span class="green">der</span>
+        </li>
+        <!-- 17.03.2023 END -------->
+
+        <!-- 18.03.2023 START ------>
+        <li>
+          Wohnzimmertisch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Technik
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Gymnastik
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pilot
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Insel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Eule
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wildkatze
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Pyramide
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kopfsalat
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Spinat
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Brötchen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Schaumstoffschwam
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          neben
+          <span class=""></span>
+        </li>
+
+        <li>
+          doppel
+          <span class=""></span>
+        </li>
+
+        <li>
+          krabbel
+          <span class=""></span>
+        </li>
+
+        <li>
+          laufen
+          <span class=""></span>
+        </li>
+
+        <li>
+          schließen
+          <span class=""></span>
+        </li>
+
+        <li>
+          traurig
+          <span class=""></span>
+        </li>
+
+        <li>
+          froh
+          <span class=""></span>
+        </li>
+        <!-- 18.03.2023 END ---------->
+
+        <!-- 19.03.2023 START -------->
+        <li>
+          Bowling
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Puppile
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Pupenhaus
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kinderbett
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Anzug
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Zahnbürste
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kegel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kugel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tomatensuppe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Sushi
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Unterhose
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Blutorange
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Möve
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schneidebrett
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Fleisch
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Koch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Sanitäter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Polizeiauto
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Manager
+          <span class="green">der</span>
+        </li>
+        <!-- 19.03.2023 END -------->
+
+        <!-- 24.03.2023 START ------>
+        <li>
+          auf
+          <span class=""></span>
+        </li>
+
+        <li>
+          Jeans
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Overall
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Hut
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ammeise
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Topf
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Hemd
+          <span class="red">das</span>
+        </li>
+
+        <li>
+          Ballon
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Keks
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Roller
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Lösung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Garten
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gitarrist
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Maler
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Hyäne
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          los
+          <span class=""></span>
+        </li>
+
+        <li>
+          einfach
+          <span class=""></span>
+        </li>
+        <!-- 24.03.2023 END -------->
+
+        <!-- 25.03.2023 START ------>
+        <li>
+          wütend
+          <span class=""></span>
+        </li>
+
+        <li>
+          hallo
+          <span class=""></span>
+        </li>
+
+        <li>
+          erfinden
+          <span class=""></span>
+        </li>
+
+        <li>
+          Tschüß
+          <span class="red">das</span>
+        </li>
+
+        <li>
+          sauber
+          <span class=""></span>
+        </li>
+
+        <li>
+          sauer
+          <span class=""></span>suchen
+        </li>
+
+        <li>
+          geben
+          <span class=""></span>
+        </li>
+
+        <li>
+          reden
+          <span class=""></span>
+        </li>
+
+        <li>
+          optimistisch
+          <span class=""></span>
+        </li>
+
+        <li>
+          intelegent
+          <span class=""></span>
+        </li>
+
+        <li>
+          klug
+          <span class=""></span>
+        </li>
+
+        <li>
+          ohne
+          <span class=""></span>
+        </li>
+        <!-- 25.03.2023 END -------->
+
+        <!-- 05.04.2023 START ------>
+        <li>
+          Federball
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Trommel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Aprikose
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wort
+          <span class="blue">das</span>
+        </li>
+
+        <li id="letterZ">
+          Zahl
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Herz
+          <span class="red">das</span>
+        </li>
+
+        <li>
+          leben
+          <span class=""></span>
+        </li>
+
+        <li>
+          sollen
+          <span class=""></span>
+        </li>
+
+        <li>
+          wissen
+          <span class=""></span>
+        </li>
+
+        <li>
+          denken
+          <span class=""></span>
+        </li>
+
+        <li>
+          es
+          <span class=""></span>
+        </li>
+
+        <li>
+          danken
+          <span class=""></span>
+        </li>
+
+        <li>
+          was
+          <span class=""></span>
+        </li>
+
+        <li>
+          etwas
+          <span class=""></span>
+        </li>
+
+        <li>
+          also
+          <span class=""></span>
+        </li>
+
+        <li>
+          diese
+          <span class=""></span>
+        </li>
+
+        <li>
+          wer
+          <span class=""></span>
+        </li>
+
+        <li>
+          wie
+          <span class=""></span>
+        </li>
+        <!-- 05.04.2023 END -------->
+
+        <!-- 06.04.2023 START ------>
+
+        <li>
+          dauern
+          <span class=""></span>
+        </li>
+
+        <li>
+          sparen
+          <span class=""></span>
+        </li>
+
+        <li>
+          springen
+          <span class=""></span>
+        </li>
+
+        <li>
+          fehlen
+          <span class=""></span>
+        </li>
+
+        <li>
+          glauben
+          <span class=""></span>
+        </li>
+
+        <li>
+          klettern
+          <span class=""></span>
+        </li>
+
+        <li>
+          schenken
+          <span class=""></span>
+        </li>
+
+        <li>
+          bringen
+          <span class=""></span>
+        </li>
+
+        <li>
+          bauen
+          <span class=""></span>
+        </li>
+
+        <li>
+          rauchen
+          <span class=""></span>
+        </li>
+
+        <li>
+          nehmen
+          <span class=""></span>
+        </li>
+
+        <li>
+          nennen
+          <span class=""></span>
+        </li>
+
+        <li>
+          aussehen
+          <span class=""></span>
+        </li>
+
+        <li>
+          bilden
+          <span class=""></span>
+        </li>
+
+        <li>
+          ausziehen
+          <span class=""></span>
+        </li>
+
+        <li>
+          anziehen
+          <span class=""></span>
+        </li>
+
+        <li>
+          bedeuten
+          <span class=""></span>
+        </li>
+
+        <li>
+          empfehlen
+          <span class=""></span>
+        </li>
+
+        <li>
+          raten
+          <span class=""></span>
+        </li>
+        <!-- 06.04.2023 END -------->
+
+        <!-- 07.04.2023 START ------>
+        <li>
+          Tüte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Spielzeug
+          <span class="blue">das</span>
+        </li>
+
+        <li id="letterZ">
+          Zylinder
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Vorname
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Nachname
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          studieren
+          <span class=""></span>
+        </li>
+
+        <li>
+          backen
+          <span class=""></span>
+        </li>
+
+        <li>
+          baden
+          <span class=""></span>
+        </li>
+
+        <li>
+          basteln
+          <span class=""></span>
+        </li>
+
+        <li>
+          lachen
+          <span class=""></span>
+        </li>
+
+        <li>
+          küssen
+          <span class=""></span>
+        </li>
+
+        <li>
+          wem
+          <span class=""></span>
+        </li>
+
+        <li>
+          dürfensuchen
+          <span class=""></span>
+        </li>
+
+        <li>
+          helfen
+          <span class=""></span>
+        </li>
+
+        <li>
+          lassen
+          <span class=""></span>
+        </li>
+
+        <li>
+          gefallen
+          <span class=""></span>
+        </li>
+
+        <li>
+          einladen
+          <span class=""></span>
+        </li>
+
+        <li>
+          legen
+          <span class=""></span>
+        </li>
+        <!-- 07.04.2023 END -------->
+
+        <!-- 17.04.2023 START ------>
+        <li>
+          Zunge
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Muskel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Rippe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Staub
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mantel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Hagel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Freiheit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Freundschaft
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          erzählen
+          <span class=""></span>
+        </li>
+
+        <li>
+          gießen
+          <span class=""></span>
+        </li>
+
+        <li>
+          bewundern
+          <span class=""></span>
+        </li>
+
+        <li>
+          böse
+          <span class=""></span>
+        </li>
+
+        <li>
+          decken
+          <span class=""></span>
+        </li>
+
+        <li>
+          gestern
+          <span class=""></span>
+        </li>
+
+        <li>
+          funktionieren
+          <span class=""></span>
+        </li>
+
+        <li>
+          besuchen
+          <span class=""></span>
+        </li>
+
+        <li>
+          beginnen
+          <span class=""></span>
+        </li>
+
+        <li>
+          leicht
+          <span class=""></span>
+        </li>
+        <!-- 17.04.2023 END -------->
+
+        <!-- 28.04.2023 START ------>
+        <li>
+          Südreich
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Nordreich
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Dreieck
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Feuerwehrwache
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Spass
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          aktiv
+          <span class=""></span>
+        </li>
+
+        <li>
+          ruhig
+          <span class=""></span>
+        </li>
+
+        <li>
+          nervös
+          <span class=""></span>
+        </li>
+
+        <li>
+          hübsch
+          <span class=""></span>
+        </li>
+
+        <li>
+          passiv
+          <span class=""></span>
+        </li>
+
+        <li>
+          bitter
+          <span class=""></span>
+        </li>
+
+        <li>
+          durstig
+          <span class=""></span>
+        </li>
+
+        <li>
+          schwindelig
+          <span class=""></span>
+        </li>
+
+        <li>
+          wenn
+          <span class=""></span>
+        </li>
+
+        <li>
+          wann
+          <span class=""></span>
+        </li>
+
+        <li>
+          wohin
+          <span class=""></span>
+        </li>
+
+        <li>
+          salzig
+          <span class=""></span>
+        </li>
+
+        <li>
+          süß
+          <span class=""></span>
+        </li>
+
+        <li>
+          gierig
+          <span class=""></span>
+        </li>
+        <!-- 28.04.2023 END -------->
+
+        <!-- 29.04.2023 SART ------>
+        <li>
+          Thema
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Vase
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Thermometer
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Treffen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Schmutz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Jugend
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Laterne
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Mauer
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Gesundheit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Decke
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Mord
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Fußboden
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Patient
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Übersetzer
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Zone
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Politik
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          behandeln
+          <span class=""></span>
+        </li>
+
+        <li>
+          blond
+          <span class=""></span>
+        </li>
+
+        <li>
+          leer
+          <span class=""></span>
+        </li>
+
+        <li>
+          voll
+          <span class=""></span>
+        </li>
+        <!-- 29.04.2023 END -------->
+
+        <!-- 30.04.2023 START ------>
+        <li>
+          Regel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Talent
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Teppich
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Regierung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wurzel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Handfläche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Diagnose
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ring
+          <span class="red">der</span>
+        </li>
+
+        <li>
+          Furcht
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schlacht
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Lautsprecher
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Variante
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Zeichen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kern
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          absolut
+          <span class=""></span>
+        </li>
+
+        <li>
+          hässlich
+          <span class=""></span>
+        </li>
+
+        <li>
+          hoch
+          <span class=""></span>
+        </li>
+
+        <li>
+          ewig
+          <span class=""></span>
+        </li>
+
+        <li>
+          wozu
+          <span class=""></span>
+        </li>
+
+        <li>
+          absurd
+          <span class=""></span>
+        </li>
+        <!-- 30.04.2023 END -------->
+
+        <!-- 01.05.2023 START ------>
+        <li id="letterE">
+          Ecke
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schulstunde
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Blut
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Urlaub
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gebet
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Zweck
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Magen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kunst
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bart
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Theater
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Eingang
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ausgang
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Küchengerät
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Arbeitsplatz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schauspielerin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tourismus
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mensch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Esszimmer
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Hockey
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          breit
+          <span class=""></span>
+        </li>
+        <!-- 01.05.2023 END -------->
+
+        <!-- 02.05.2023 START ------>
+
+        <li>
+          Ausflug
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Übelkeit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Plakat
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Bronze
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Gericht
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Termin
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Lunge
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Roboter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Infektion
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Liebling
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Nominativ
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Genetiv
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Dativ
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Akkusativ
+          <span class="green">der</span>
+        </li>
+
+        <li id="letterV">
+          Vakuole
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Elle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bar
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          sägen
+          <span class=""></span>
+        </li>
+        <!-- 02.05.2023 END -------->
+
+        <!-- 03.05.2023 START ------>
+        <li>
+          Gürtel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kapitel
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Weltraum
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Wange
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schläfe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Stuhlbein
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Helm
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kopfende
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Einkaufszentrum
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Golf
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Baseball
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gefängnis
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Hüfte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Doppelbett
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Blumenladen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Fitness
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Lebenszeit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bademantel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          konzentrieren
+          <span class=""></span>
+        </li>
+        <!-- 03.05.2023 END -------->
+
+        <!-- 05.05.2023 START ------>
+        <li>
+          Kontinent
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Klammer
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Biss
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Hautausschlag
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kopfschmerzen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Steppe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Akrobat
+          <span class="green">der</span>
+        </li>
+
+        <li id="letterN">
+          Nabel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Bohrer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Halsschmerzen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Taille
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          kreativ
+          <span class=""></span>
+        </li>
+
+        <li>
+          bohren
+          <span class=""></span>
+        </li>
+
+        <li>
+          husten
+          <span class=""></span>
+        </li>
+
+        <li>
+          von
+          <span class=""></span>
+        </li>
+
+        <li>
+          aus
+          <span class=""></span>
+        </li>
+
+        <li>
+          niesen
+          <span class=""></span>
+        </li>
+        <!-- 05.05.2023 END -------->
+
+        <!-- 07.05.2023 START ------>
+        <li>
+          Herzanfall
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Radius
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Oval
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Trapez
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Lände
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Heißwasserhan
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Wächter
+          <span class="green">der</span>
+        </li>
+
+        <li id="letterK">
+          Kaltwasserhan
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Poäsie
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Katalog
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Apotheke
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bauarbeiter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Abfluss
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gärtner
+          <span class="green">der</span>
+        </li>
+        <!-- 07.05.2023 END -------->
+
+        <!-- 09.05.2023 START ------>
+
+        <li>
+          Scanner
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Leute
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Lutscher
+          <span class="green">der</span>
+        </li>
+
+        <li id="letterQ">
+          Quadrat
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Braut
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kaugummi
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Verkäufer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Quatsch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Lesezeichen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kassenbon
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Geldbörse
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tanzakademie
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Konditorei
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Fünfeck
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Fahrstuhl
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Knopf
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Musikschule
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Weste
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Sakko
+          <span class="blue">das</span>
+        </li>
+        <!-- 09.05.2023 END -------->
+
+        <!-- 16.05.2023 START ------>
+
+        <li>
+          Handschelle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Tube
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kosmetiktasche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Speichel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Flughafen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Vorhang
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Klatsch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Fleck
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Grund
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          vielleicht
+          <span class=""></span>
+        </li>
+
+        <li>
+          manchmal
+          <span class=""></span>
+        </li>
+
+        <li>
+          wegen
+          <span class=""></span>
+        </li>
+
+        <li>
+          festnehmen
+          <span class=""></span>
+        </li>
+
+        <li>
+          immer
+          <span class=""></span>
+        </li>
+
+        <li>
+          weil
+          <span class=""></span>
+        </li>
+        <!-- 16.05.2023 END -------->
+
+        <!-- 18.05.2023 START ------>
+        <li>
+          Zirkus
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schminke
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kirche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Volkstanz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Sohle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Nachtclub
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Diagonale
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Solist
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Duett
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Welle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Pantomime
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Seele
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kinderspielplatz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Friedhof
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schlagzeug
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          so
+          <span class=""></span>
+        </li>
+
+        <li>
+          sein
+          <span class=""></span>
+        </li>
+
+        <li>
+          könnte
+          <span class=""></span>
+        </li>
+        <!-- 18.05.2023 END -------->
+
+        <!-- 21.05.2023 END -------->
+        <li>
+          Giftpilz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Fliegenpilz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Venus
+          <span class="green">der</span>
+        </li>
+
+        <li id="letterG">
+          Galaxie
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Uranus
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Komet
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Saturn
+          <span class="blue">das</span>
+        </li>
+
+        <li id="letterU">
+          U-Bahn
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Jupiter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Fernglas
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Mars
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Souvenir
+          <span class="blue">das</span>
+        </li>
+
+        <li id="letterS">
+          Safaripark
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pluto
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mikrofon
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Musical
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          dick
+          <span class=""></span>
+        </li>
+
+        <li>
+          fast
+          <span class=""></span>
+        </li>
+        <!-- 21.05.2023 END -------->
+
+        <!-- 23.05.2023 START ------>
+        <li>
+          Krieg
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Garage
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schwan
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kinokarte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Engel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gärtnerin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ort
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Vorort
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Chefkoch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Adler
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ahorn
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kiefer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Rechen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Rechnung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Teufel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Olivenbaum
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kino
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Tulpe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Juwelier
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          bestellen
+          <span class=""></span>
+        </li>
+        <!-- 23.05.2023 END -------->
+
+        <!-- 25.05.2023 END -------->
+        <li>
+          Paradies
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Markt
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Fee
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bruderschaft
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Geschäftsfrau
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bauernhof
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Landwirt
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Apfelbaum
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schaufel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Spielwarengeschäft
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Osterglocke
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Speisekarte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Krönung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Geist
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schwester
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bruder
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Eiche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Zitronenbaum
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          wessen
+          <span class=""></span>
+        </li>
+        <!-- 25.05.2023 END -------->
+
+        <!-- 01.06.2023 START ------>
+        <li>
+          Wahl
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Benutzer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Nachricht
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Auswahl
+          <span class="red">die</span>
+        </li>
+
+        <li id="letterP">
+          Paar
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Datei
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Strafe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          ablehnen
+          <span class=""></span>
+        </li>
+
+        <li>
+          sortieren
+          <span class=""></span>
+        </li>
+
+        <li>
+          einfügen
+          <span class=""></span>
+        </li>
+
+        <li>
+          anpinnen
+          <span class=""></span>
+        </li>
+
+        <li>
+          verändern
+          <span class=""></span>
+        </li>
+
+        <li>
+          anpassen
+          <span class=""></span>
+        </li>
+
+        <li>
+          einstellen
+          <span class=""></span>
+        </li>
+
+        <li>
+          auswählen
+          <span class=""></span>
+        </li>
+
+        <li>
+          ansehen
+          <span class=""></span>
+        </li>
+
+        <li>
+          bestätigen
+          <span class=""></span>
+        </li>
+
+        <li>
+          speichern
+          <span class=""></span>
+        </li>
+
+        <li>
+          unterhalten
+          <span class=""></span>
+        </li>
+
+        <li>
+          ausmalen
+          <span class=""></span>
+        </li>
+        <!-- 01.06.2023 END -------->
+
+        <!-- 06.06.
+        <span c<span class="">2023 END -------->
+
+        <li>
+          Gepäck
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Stumpf­heit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schweigen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Ruhm
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Reifen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Übung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Scheinwerfer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kindersitz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Indikator
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Nummernschild
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Reihe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schild
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Erdnussbutter
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          solide
+          <span class=""></span>
+        </li>
+
+        <li>
+          klassisch
+          <span class=""></span>
+        </li>
+
+        <li>
+          ausruhen
+          <span class=""></span>
+        </li>
+
+        <li>
+          national
+          <span class=""></span>
+        </li>
+
+        <li>
+          prüfen
+          <span class=""></span>
+        </li>
+
+        <li>
+          öffentlich
+          <span class=""></span>
+        </li>
+        <!-- 06.06.2023 END -------->
+
+        <!-- 08.06.20
+        <span c<span class="">23 START ------>
+        <li>
+          Benzin
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Frühstück
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Mit­tag­es­sen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Welt
+          <span class="blue">die</span>
+        </li>
+
+        <li>
+          Hexerei
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Preis
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Prozent
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gespräch
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Prüfung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          frei
+          <span class=""></span>
+        </li>
+
+        <li>
+          verheiratet
+          <span class=""></span>
+        </li>
+
+        <li>
+          weit
+          <span class=""></span>
+        </li>
+
+        <li>
+          bereits
+          <span class=""></span>
+        </li>
+
+        <li>
+          bald
+          <span class=""></span>
+        </li>
+
+        <li>
+          spenden
+          <span class=""></span>
+        </li>
+
+        <li>
+          stehen
+          <span class=""></span>
+        </li>
+
+        <li>
+          bezahlen
+          <span class=""></span>
+        </li>
+        <!-- 08.06.2023 END -------->
+
+        <!-- 07.02.2023 START -------->
+
+        <li>
+          Regenschirm
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Sur­fing
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Stadtplan
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Nachmittag
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mülleimer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Badeanzug
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ware
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Balletttänzer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Großvater
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Großmutter
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Uniform
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wohnung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Villa
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          wiederholen
+          <span class=""></span>
+        </li>
+
+        <li>
+          verständlich
+          <span class=""></span>
+        </li>
+
+        <li>
+          anrufen
+          <span class=""></span>
+        </li>
+
+        <li>
+          reiten
+          <span class=""></span>
+        </li>
+
+        <!-- 07.02.2023 END ---------->
+
+        <li>
+          zählen
+          <span class=""></span>
+        </li>
+
+        <li>
+          stark
+          <span class=""></span>
+        </li>
+
+        <!-- 08.02.2023 END ---------->
+
+        <!-- 18.02.2023 START--------->
+        <li>
+          hellweiß
+          <span class=""></span>
+        </li>
+        <!-- 18.02.2023 END ---------->
+
+        <!-- 20.02.2023 START -------->
+        <li>
+          Graphit
+          <span class="green">der</span>
+        </li>
+        <!-- 20.02.2023 END ---------->
+
+        <!-- 06.03.2023 START -------->
+
+        <li>
+          Krankenschwester
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ihr
+          <span class=""></span>
+        </li>
+        <!-- 08.03.2023 END ---------->
+
+        <!-- 11.03.2023 START -------->
+        <li>
+          Tierarzt
+          <span class="green">der</span>
+        </li>
+
+        <!-- 11.03.2023 END ---------->
+        <li>
+          Wimper
+          <span class="red">die</span>
+        </li>
+        <!-- 14.03.2023 END ---------->
+
+        <!-- 16.03.2023 START ------>
+
+        <li>
+          Mittelfinger
+          <span class="green">der</span>
+        </li>
+        <!-- 16.03.2023 END -------->
+
+        <!-- 17.04.2023 START ------>
+        <li>
+          erzählen
+          <span class=""></span>
+        </li>
+        <!-- 17.04.2023 END -------->
+
+        <!-- 02.05.2023 START ------>
+
+        <li>
+          Plakat
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          sehr
+          <span class=""></span>
+        </li>
+        <!-- 02.05.2023 END -------->
+
+        <!-- 03.05.2023 START ------>
+
+        <li>
+          weinen
+          <span class=""></span>
+        </li>
+
+        <!-- 05.05.2023 START ------>
+
+        <li>
+          einschlagen
+          <span class=""></span>
+        </li>
+        <!-- 05.05.2023 END -------->
+
+        <!-- 07.05.2023 START ------>
+
+        <li>
+          Schädel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Winkelmesser
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Sonnenbrand
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Yogga
+          <span class="blue">das</span>
+        </li>
+        <!-- 07.05.2023 END -------->
+
+        <!-- 09.05.2023 START ------>
+        <li>
+          Top
+          <span class="blue">das</span>
+        </li>
+
+        <!-- 09.05.2023 END -------->
+
+        <!-- 16.05.2023 START ------>
+        <li>
+          Boot
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Bahnsteig
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          nie
+          <span class=""></span>
+        </li>
+        <!-- 16.05.2023 END -------->
+
+        <!-- 18.05.2023 START ------>
+
+        <li>
+          geradeaus
+          <span class=""></span>
+        </li>
+        <!-- 18.05.2023 END -------->
+
+        <!-- 21.05.2023 END -------->
+
+        <li>
+          Brücke
+          <span class="red">die</span>
+        </li>
+
+        <!-- 21.05.2023 END -------->
+
+        <!-- 25.05.2023 END -------->
+
+        <li>
+          Pfirsichbaum
+          <span class="green">der</span>
+        </li>
+        <!-- 25.05.2023 END -------->
+
+        <!-- 28.05.2023 START ------>
+        <li>
+          Bügeleisen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Burg
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Gewicht
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Wachstum
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Friseur
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Segel
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Getränk
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Malerei
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Neptun
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Serenade
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ge­danken­strich
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Picknick
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Statue
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Balletttänzerin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Platz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Palast
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Rennen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          rufen
+          <span class=""></span>
+        </li>
+
+        <li>
+          falls
+          <span class=""></span>
+        </li>
+
+        <!-- 14.03.2023 END ---------->
+
+        <li>
+          Schildkrötte
+          <span class="red">die</span>
+        </li>
+
+        <!-- 14.03.2023 END ---------->
+
+        <!-- 25.03.2023 START ------>
+
+        <li>
+          geben
+          <span class=""></span>
+        </li>
+
+        <!-- 25.03.2023 END -------->
+
+        <!-- 05.04.2023 START ------>
+        <li>
+          Fischer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Fisch
+          <span class="green">der</span>
+        </li>
+
+        <!-- 05.04.2023 END -------->
+
+        <!-- 06.04.2023 START ------>
+        <li>
+          Geschenk
+          <span class="blue">das</span>
+        </li>
+
+        <!-- 06.04.2023 END -------->
+
+        <!-- 07.04.2023 START ------>
+        <li>
+          Tüte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Geschichte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Vorname
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Einzahl
+          <span class="red">die</span>
+        </li>
+
+        <!-- 07.04.2023 END -------->
+
+        <!-- 17.04.2023 START ------>
+
+        <li>
+          lustig
+          <span class=""></span>
+        </li>
+        <!-- 17.04.2023 END -------->
+
+        <!-- 28.04.2023 START ------>
+
+        <li>
+          hunungerig
+          <span class=""></span>
+        </li>
+        <!-- 28.04.2023 END -------->
+
+        <!-- 05.05.2023 START ------>
+
+        <li>
+          Serviette
+          <span class="red">die</span>
+        </li>
+        <!-- 05.05.2023 END -------->
+
+        <li>
+          Zirkel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schulter
+          <span class="red">die</span>
+        </li>
+
+        <!-- 07.05.2023 END -------->
+
+        <li>
+          werden
+          <span class=""></span>
+        </li>
+
+        <li>
+          noch
+          <span class=""></span>
+        </li>
+
+        <!-- 16.05.2023 END -------->
+
+        <li>
+          Denkmal
+          <span class="blue">das</span>
+        </li>
+        <!-- 21.05.2023 END -------->
+
+        <!-- 23.07.2023 Start -->
+        <li>
+          Kasus (Fall z.B. Nominativ)
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pronomen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Kultur
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Faust
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Eiche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ferien
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Fels
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Feld
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Zeitung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Gericht
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Terrorismus
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Nachmittag
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Alter
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Geschäft
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Gewürz
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Faschismus
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gipfel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gewitter
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Landschaft
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Lager
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Ferne
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Küken
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Herd
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Morgenessen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Territorium
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Original
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          glänzen
+        </li>
+
+        <li>
+          solches
+        </li>
+
+        <li>
+          fein
+        </li>
+
+        <li>
+          finster
+        </li>
+
+        <li>
+          reisen
+        </li>
+
+        <li>
+          jene
+        </li>
+
+        <li>
+          solche
+        </li>
+
+        <li>
+          solcher
+        </li>
+
+        <li>
+          faschistisch
+        </li>
+
+        <li>
+          flach
+        </li>
+
+        <li>
+          frühstücken
+        </li>
+
+        <li>
+          gebrauchen
+        </li>
+
+        <li>
+          fühlen
+        </li>
+
+        <li>
+          ohne
+        </li>
+
+        <li>
+          worin
+        </li>
+
+        <li>
+          denn
+        </li>
+
+        <li>
+          etwa
+        </li>
+
+        <li>
+          erst
+        </li>
+
+        <li>
+          seit
+        </li>
+
+        <li>
+          wenig
+        </li>
+
+        <li>
+          nur
+        </li>
+
+        <li>
+          pasiert
+        </li>
+
+        <li>
+          darin
+        </li>
+
+        <li>
+          genau
+        </li>
+
+        <li>
+          blauen
+        </li>
+
+        <li>
+          pünktlich
+        </li>
+
+        <li id="letterW">
+          wach
+        </li>
+
+        <li>
+          organisieren
+        </li>
+
+        <li>
+          herein
+        </li>
+
+        <li>
+          heraus
+        </li>
+
+        <li>
+          erkennen
+        </li>
+
+        <li>
+          musikalisch
+        </li>
+
+        <li>
+          berühmt
+        </li>
+
+        <li>
+          verzeihen
+        </li>
+
+        <li>
+          Messe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Planet
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Meteorit
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Prozess
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pionier
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pionierlager
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Astronaut
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mond
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Phantasie
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Pfanne
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bericht
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Duft
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          berichten
+        </li>
+
+        <li>
+          begründen
+        </li>
+
+        <li>
+          komponieren
+        </li>
+
+        <li>
+          selbstverständlich
+        </li>
+
+        <li>
+          begreifen
+        </li>
+
+        <li>
+          entfernt
+        </li>
+
+        <li>
+          selbst
+        </li>
+
+        <li>
+          benutzen
+        </li>
+
+        <li>
+          Futter
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Gebäude
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Firma
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bedingung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wanderung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Vitrine
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Motor
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mondschein
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Gestalt
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Beitrag
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          beißen
+        </li>
+
+        <li>
+          gewöhnlich
+        </li>
+
+        <li>
+          wachsen
+        </li>
+
+        <li>
+          fürwahr
+        </li>
+
+        <li>
+          fürch­ten
+        </li>
+
+        <li>
+          monatlich
+        </li>
+
+        <li>
+          beeilen
+        </li>
+
+        <li>
+          füttern
+        </li>
+
+        <li>
+          bestehen
+        </li>
+
+        <li>
+          beantworten
+        </li>
+
+        <li>
+          Frosch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ernte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Gruß
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Hauptstadt
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Abtreibung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Grippe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Grenze
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Glückwunsch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schriftsteller
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Virtuose
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Bedeutung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kriminalist
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Erklärung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          göttliche
+        </li>
+
+        <li>
+          verwenden
+        </li>
+
+        <li>
+          schriftlich
+        </li>
+
+        <li>
+          modern
+        </li>
+
+        <li>
+          gründen
+        </li>
+
+        <li>
+          besonders
+        </li>
+
+        <li>
+          eilig
+        </li>
+
+        <li>
+          Miete
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          treu
+        </li>
+
+        <li>
+          eng
+        </li>
+
+        <li>
+          als
+        </li>
+
+        <li>
+          toll
+        </li>
+
+        <li>
+          angenehm
+        </li>
+
+        <li>
+          dringend
+        </li>
+
+        <li>
+          seltsam
+        </li>
+
+        <li>
+          dünn
+        </li>
+
+        <li>
+          hart
+        </li>
+
+        <li>
+          schwach
+        </li>
+
+        <li>
+          langweilig
+        </li>
+
+        <li>
+          ernst
+        </li>
+
+        <li>
+          gefährlich
+        </li>
+
+        <li>
+          leer
+        </li>
+
+        <li>
+          frisch
+        </li>
+
+        <li>
+          früh
+        </li>
+
+        <li>
+          neugierig
+        </li>
+
+        <li>
+          flüssig
+        </li>
+
+        <li>
+          schmutzig
+        </li>
+
+        <li>
+          Nachtisch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Dessert
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Sinn
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Hauptwort
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Zweifel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schlaflosigkeit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Comedy
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Matheaufgabe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          schlaflos
+        </li>
+
+        <li>
+          breit
+        </li>
+
+        <li>
+          zweifellos
+        </li>
+
+        <li>
+          arbeitslos
+        </li>
+
+        <li>
+          sinnlos
+        </li>
+
+        <li>
+          endlos
+        </li>
+
+        <li>
+          ungesprachig
+        </li>
+
+        <li>
+          gesprächig
+        </li>
+
+        <li>
+          grandios
+        </li>
+
+        <li>
+          großartig
+        </li>
+
+        <li>
+          wunderschön
+        </li>
+
+        <li>
+          niedrig
+        </li>
+
+        <li>
+          Müdigkeit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Pflege
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Frisur
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Landung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wahnsinn
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ermüdung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kompott
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Komponist
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Jubiläum
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Harmonie
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wortschatz
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Psychologie
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kampflied
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Interesse
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Zins
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Tropfen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Rat
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Traube
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Rätsel
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Vulkan
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Zyklon
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Psyche
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Arbeitsblatt
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          pfleglich
+        </li>
+
+        <li>
+          mental
+        </li>
+
+        <li>
+          psychisch
+        </li>
+
+        <li>
+          seelisch
+        </li>
+
+        <li>
+          sprachlos
+        </li>
+
+        <li>
+          uninteressant
+        </li>
+
+        <li>
+          praktisch
+        </li>
+
+        <li>
+          weinerlich
+        </li>
+
+        <li>
+          verrückt
+        </li>
+
+        <li>
+          international
+        </li>
+
+        <li>
+          klingeln
+        </li>
+
+        <li>
+          klingen
+        </li>
+
+        <li>
+          immerfort
+        </li>
+
+        <li>
+          wirtschaftlich
+        </li>
+
+        <li>
+          wirklich
+        </li>
+
+        <li>
+          sogar
+        </li>
+
+        <li>
+          tun
+        </li>
+
+        <li>
+          Lust
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Schatten
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schönheit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Reif
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Reim
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Regenbogen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Rede
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Raumfahrer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Rechenmaschine
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kälte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kamerad
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Harmonika
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Hauptrolle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Handlung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Heim
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Heimat
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Koffer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kohle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          heben
+        </li>
+
+        <li>
+          reflexiv
+        </li>
+
+        <li>
+          mähen
+        </li>
+
+        <li>
+          Dialog
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Briefkasten
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Briefmarke
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ansichtskarte
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Leder
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Liter
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Mal
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Halstuch
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Bub
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Knabe
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          loben
+        </li>
+
+        <li>
+          lehren
+        </li>
+
+        <li>
+          lebendig
+        </li>
+
+        <li>
+          abhalten
+        </li>
+
+        <li>
+          abgehen
+        </li>
+
+        <li>
+          weniger
+        </li>
+
+        <li>
+          aufhören
+        </li>
+
+        <li>
+          aufmerksam
+        </li>
+
+        <li>
+          brennen
+        </li>
+
+        <li>
+          deswegen
+        </li>
+
+        <li>
+          Idylle
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Beispiel
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Besuch
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Deutsche
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Republik
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Deutschstunde
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Dirigent
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Dom
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Dolmetscher
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Resultat
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          reserviert
+        </li>
+
+        <li>
+          donnern
+        </li>
+
+        <li>
+          deutlich
+        </li>
+
+        <li>
+          bellen
+        </li>
+
+        <li>
+          abschicken
+        </li>
+
+        <li>
+          abnehmen
+        </li>
+
+        <li>
+          abhören
+        </li>
+
+        <li>
+          illustriert
+        </li>
+
+        <li>
+          illegal
+        </li>
+
+        <li>
+          ideal
+        </li>
+
+        <li>
+          Treffpunkt
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Übel
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Ufer
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Unglück
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Unmögliche
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Tiefe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Verehrung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Sendung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wandzeitung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ware
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wiederholung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wind
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Willkommen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Zurückkommen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Pfeil
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pfadfinder
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Veilchen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          schmerzen
+        </li>
+
+        <li>
+          windlig
+        </li>
+
+        <li>
+          wundern
+        </li>
+
+        <li>
+          S-Bahn
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Ding
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Partner
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Partnerin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Mikrowellenherd
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Lastkraftwagen
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Ticket
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Pass
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Snack
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          jetzig
+        </li>
+
+        <li>
+          exakt
+        </li>
+
+        <li>
+          selten
+        </li>
+
+        <li>
+          häufig
+        </li>
+
+        <li>
+          heimisch
+        </li>
+
+        <li>
+          fremd
+        </li>
+
+        <li>
+          ganz
+        </li>
+
+        <li>
+          gemeinsam
+        </li>
+
+        <li>
+          feige
+        </li>
+
+        <li>
+          mutig
+        </li>
+
+        <li>
+          schlau
+        </li>
+
+        <li>
+          Schulbus
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Chefin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Pilotin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Computerprogramierer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Traumhaus
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Sachse
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Schleife
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Kabel
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Mechanismus
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Stimmung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Gusto
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Holz
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Norwegen
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Trosse
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Lavendel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Pfeil
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Kollektiv
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          numerisch
+        </li>
+
+        <li>
+          digital
+        </li>
+
+        <li>
+          türkis
+        </li>
+
+        <li>
+          legendär
+        </li>
+
+        <li>
+          traumhaft
+        </li>
+
+        <li>
+          himmlisch
+        </li>
+
+        <li>
+          göttlich
+        </li>
+
+        <li>
+          Charisma
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Schauspielkunst
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Meister
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Weisheit
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bestrafung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Messung
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Dieb­stahl
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Dieb
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Premie
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Bonus
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Hummel
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Wespe
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Verdickungsmittel
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Hörer
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Grusel
+          <span class="green">der</span>
+        </li>
+
+        <li>
+          Feuerzeug
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          Hörerin
+          <span class="red">die</span>
+        </li>
+
+        <li>
+          Protokoll
+          <span class="blue">das</span>
+        </li>
+
+        <li>
+          typisch
+        </li>
+
+        <li>
+          weise
+        </li>
+
+        <li>
+          charismatisch
+        </li>
+        <!-- 23.juli 2023 End -->
+      </ol>
+      <div id="abstand-unten"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <form class="search-form" action="suchergebnisse.php" method="get">
+          <a href="#" id="scrollToTopButton"
+            ><span class="pfei_to_top">⬆️</span></a
+          >
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Suche..."
+            onkeyup="searchList()"
+          />
+        </form>
+      </div>
+    </footer>
+
+    <!-- <p class="copy">&copy; 2023 ENBT</p> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script>
+      const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+      scrollToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+/* BUTTONS ANCHOR */
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.pushable {
+  /* background: hsl(340deg 100% 32%); */
+  /* background-color: hsl(16, 100%, 47%); */
+  /* background-color: hsl(0, 0%, 32%); */
+  background-color: hsl(0, 0%, 62%);
+  border: none;
+  border-radius: 2rem;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 0.4rem;
+}
+
+@keyframes vibrate-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-1px, -1px);
+  }
+  20% {
+    transform: translate(1px, -1px);
+  }
+  30% {
+    transform: translate(-1px, 1px);
+  }
+  40% {
+    transform: translate(1px, 1px);
+  }
+  50% {
+    transform: translate(-1px, -1px);
+  }
+  60% {
+    transform: translate(1px, -1px);
+  }
+  70% {
+    transform: translate(-1px, 1px);
+  }
+  80% {
+    transform: translate(1px, 1px);
+  }
+  90% {
+    transform: translate(-1px, -1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.vibrate-effect {
+  animation: vibrate-animation 0.5ms linear;
+}
+
+.front {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 100%;
+  font-size: 1.4em;
+  /* background: hsl(345deg 100% 47%); */
+  /* background-color: hsl(16, 100%, 66%); */
+  /* background-color: hsl(0, 0%, 47%); */
+  background-color: hsl(0, 0%, 87%);
+  color: #222;
+  transform: translateY(-0.6rem);
+}
+
+.pushable:active .front {
+  transform: translateY(-0.2rem);
+}
+
+/*BUTTON STARTSEITE */
+button.home {
+  height: 100%;
+  margin: 0;
+  color: #fff;
+  background-color: #222;
+  border: none;
+  padding: 0 1.5rem;
+}

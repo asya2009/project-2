@@ -1,0 +1,100 @@
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.8rem;
+  background: url(//source.unsplash.com/2000x2000?forrest);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+}
+
+.head-fixed {
+  color: #0f4adf;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 2.4rem;
+  text-shadow: 1px 1px 1px #fff,
+  -1px -1px 1px #111;
+}
+.distance-top {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+}
+#number-input {
+  width: 15vw;
+  font-size: 1.6rem;
+  padding: 0 0 0 .5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-style: italic;
+} 
+
+::placeholder{
+  color: #0f4adf;
+}
+
+input[type="submit"] {
+  font-size: 2.4rem;
+  width: 85vw;
+  border: none;
+}
+
+input[type="submit"] {
+  padding-right: 15vw;
+}
+
+p {margin: 0; padding: 1rem;}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+th,
+td {
+  border: 0.1rem solid #ddd;
+  padding: 1.2rem;
+  text-align: center;
+  font-weight: 900;
+}
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+tr  {
+  background-color: #efeaea;
+  backdrop-filter: blur(10px);
+}
+td:nth-child(even) {background-color:  #9f9b9b;
+  margin-bottom: 1rem;
+}
+
+td:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 60rem) {
+  table {
+    font-size: 1.8rem;
+  }
+}

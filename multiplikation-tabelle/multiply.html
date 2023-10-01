@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de" translate="no">
+  <head>
+    <title>Rechne - Mal</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+
+    <form id="multiplication-form">
+        <label class="head-fixed" for="number-input">
+          <p>
+            Geben Sie zwischen (1-100) ein:
+          </p>
+        </label>
+      <div class="distance-top">
+        <input type="number" id="number-input" min="1" max="100" placeholder="Zahl" required/>
+        <input type="submit" value="Tabelle generieren" />
+      </div>
+    </form>
+
+    <!-- RESULT-TABLE -->
+    <table id="multiplication-table"></table>
+  </body>
+</html>
